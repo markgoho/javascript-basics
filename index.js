@@ -1,27 +1,18 @@
-let number = 0;
+const square = function(x) {
+  return x * x;
+};
 
-// while (number <= 12) {
-//   console.log(number);
-//   number = number + 2;
-// }
+const simpleSquare = x => x * x;
 
-// for (let i = 0; i < 10; i += 2) {
-//   console.log(i);
-// }
+const makeNoise = () => console.log('Pling!');
+makeNoise();
 
-let debt = 130;
+const power = (base, exponent) => {
+  let result = 1;
+  for (let count = 0; count < exponent; count++) {
+    result *= base;
+  }
+  return result;
+};
 
-switch (debt) {
-  case 50:
-    console.log('You need to pay some money.');
-    break;
-  case 40:
-    console.log('You should pay some money.');
-    break;
-  case 30:
-    console.log('You might want to pay some money');
-    break;
-  default:
-    console.log('Who knows how much money you owe?');
-    break;
-}
+console.log(power(2, 10));
